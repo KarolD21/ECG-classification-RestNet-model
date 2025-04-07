@@ -4,7 +4,7 @@ import wfdb
 import ast
 
 # Read signal data from database location
-df_ptbxl_database = pd.read_csv("location of signal data in .csv file")
+df_ptbxl_database = pd.read_csv("path to signal data in .csv file")
 df_ptbxl_database.set_index('ecg_id', inplace=True)
 
 # Deletes first set of currently useless columns
@@ -21,7 +21,7 @@ df_ptbxl_net = df_ptbxl.copy()
 df_ptbxl_net.drop(df_ptbxl_net.columns[[2,3,4,6,7,8,9,10,11,12,13,14]], axis=1, inplace=True)
 
 # Read signal labels from database loction
-df_ptbxl_statements = pd.read_csv("location of signal label data in .csv file")
+df_ptbxl_statements = pd.read_csv("patch to signal label data in .csv file")
 df_ptbxl_statements.rename(columns={'Unnamed: 0':'malfunction_name'}, inplace=True)
 
 # Load and convert annotation data
