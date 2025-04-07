@@ -5,7 +5,7 @@ import wfdb as ecg
 from data_input_v2 import df_ptbxl_net, df_ptbxl_statements
 from sklearn.preprocessing import MinMaxScaler
 
-path = "path to database"
+path = "path to database files"
 rate = 500
 name = '500_normalized'
 
